@@ -136,7 +136,6 @@ function plusminus() {
 }
 //  first line
 
-// PI: display PI(3.14159)
 /**
  * @function pi
  * @description display PI (3.14159)
@@ -149,7 +148,6 @@ function pi() {
     input.textContent += Math.PI.toFixed(3);
   }
 }
-// natural: display e(2.71828)
 /**
  * @function natural
  * @description display e(2.71828)
@@ -193,7 +191,6 @@ function mod() {
 function modulo() {
   input.textContent += "%";
 }
-// exp: let user input in exponential form
 
 /**
  * @function exponential
@@ -268,7 +265,6 @@ function logbase10() {
   const inputValue = Number(getInputValue());
   input.textContent = numberFormat(Math.log10(inputValue).toString());
 }
-//  sfunctionh line
 
 /**
  * @function naturalLog
@@ -358,10 +354,6 @@ function truncate() {
   const inputValue = eval(getInputValue());
   input.textContent = numberFormat(Math.floor(inputValue).toString());
 }
-/**
- * @function manInFunction
- * @description mod the input number
- */
 
 /**
  * @function degreeRadian
@@ -384,7 +376,6 @@ function degreeRadian() {
     degreeToRadian = !degreeToRadian;
   }
 }
-// fe: exponential to decimal and vice versa
 
 /**
  * @function ExponentialDecimal
@@ -454,13 +445,6 @@ function memoryClearEvent() {
  * @function displayOperator
  * @description display the operator according to received argument
  */
-
-// function displayOperator(sign) {
-//   if (input.textContent[input.textContent.length - 1] === sign) {
-//     return;
-//   }
-//   input.textContent += sign;
-// }
 
 // UTILITY
 /**
