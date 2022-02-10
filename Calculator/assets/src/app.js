@@ -1,16 +1,25 @@
 "use strict";
 //   ALL VARIALBES USED IN JAVASCRIPT
 const input = document.querySelector("#input").children[0];
-console.log(input); //!
 let degreeToRadian = true;
 let disabledMemory = true;
 const disabledStyle = ` color: gray;
 cursor: not-allowed;`;
 const enabledStyle = `cursor:pointer;color:black;`;
 let memoryPositiveValue = 0, memoryNegativeValue = 0;
+/**
+ *
+ * @function numberFormat
+ * @returns formatted input with commas
+ */
 function numberFormat(input) {
     return input.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }
+/**
+ *
+ * @function getInputValue
+ * @returns return input without commas
+ */
 function getInputValue() {
     let currentValue = input.innerText.replace(/,/g, "");
     return currentValue;
@@ -123,7 +132,6 @@ function plusminus() {
     input.textContent = (Number(getInputValue()) * -1).toString();
 }
 //  first line
-// PI: display PI(3.14159)
 /**
  * @function pi
  * @description display PI (3.14159)
@@ -136,7 +144,6 @@ function pi() {
         input.textContent += Math.PI.toFixed(3);
     }
 }
-// natural: display e(2.71828)
 /**
  * @function natural
  * @description display e(2.71828)
@@ -178,7 +185,6 @@ function mod() {
 function modulo() {
     input.textContent += "%";
 }
-// exp: let user input in exponential form
 /**
  * @function exponential
  * @description let user input the number in exponential form
@@ -246,7 +252,6 @@ function logbase10() {
     const inputValue = Number(getInputValue());
     input.textContent = numberFormat(Math.log10(inputValue).toString());
 }
-//  sfunctionh line
 /**
  * @function naturalLog
  * @description find natural log of given number
@@ -330,10 +335,6 @@ function truncate() {
     input.textContent = numberFormat(Math.floor(inputValue).toString());
 }
 /**
- * @function manInFunction
- * @description mod the input number
- */
-/**
  * @function degreeRadian
  * @description convert degree to radian and vice versa
  */
@@ -351,7 +352,6 @@ function degreeRadian() {
         degreeToRadian = !degreeToRadian;
     }
 }
-// fe: exponential to decimal and vice versa
 /**
  * @function ExponentialDecimal
  * @description convert exponential number to decimal and vice versa
@@ -414,12 +414,6 @@ function memoryClearEvent() {
  * @function displayOperator
  * @description display the operator according to received argument
  */
-// function displayOperator(sign) {
-//   if (input.textContent[input.textContent.length - 1] === sign) {
-//     return;
-//   }
-//   input.textContent += sign;
-// }
 // UTILITY
 /**
  * @function declen
