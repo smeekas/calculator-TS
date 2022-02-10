@@ -1,6 +1,5 @@
 //   ALL VARIALBES USED IN JAVASCRIPT
 const input = document.querySelector("#input")!.children[0] as Element;
-console.log(input); //!
 let degreeToRadian: boolean = true;
 let disabledMemory: boolean = true;
 const disabledStyle: string = ` color: gray;
@@ -9,9 +8,20 @@ const enabledStyle: string = `cursor:pointer;color:black;`;
 let memoryPositiveValue: number = 0,
   memoryNegativeValue: number = 0;
 
+/**
+ *
+ * @function numberFormat
+ * @returns formatted input with commas
+ */
 function numberFormat(input: string) {
   return input.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }
+
+/**
+ *
+ * @function getInputValue
+ * @returns return input without commas
+ */
 function getInputValue() {
   let currentValue = (input as HTMLDivElement).innerText.replace(/,/g, "");
   return currentValue;

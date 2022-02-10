@@ -1,4 +1,9 @@
-## scientific calculator
+## scientific calculator using TypeScript
+
+Calculator made with TypeScript so now it is less error-prone than calculator with Javascript
+
+- added bootstrap instead of custom styling
+- added data-value attributes instead of querySelector and eventListner everywhere.
 
 it can perform
 - basic +, -, /, *

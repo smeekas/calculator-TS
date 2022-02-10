@@ -17,14 +17,14 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <script src="./assets/JS/app.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -88,62 +88,62 @@
       <div class="container" id="buttons">
         <div class="row">
           <div class="col d-flex">
-            <div class="btn btn-light flex-grow-1 m-1">
+            <div class="btn btn-light flex-grow-1 m-1 px-1">
               <span>2<sup>nd</sup></span>
             </div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="pi()">&pi;</div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="natural()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="pi()">&pi;</div>
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="natural()">
               e
             </div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="clearInput()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="clearInput()">
               C
             </div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="backspace()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="backspace()">
               <i class="fas fa-backspace"></i>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col d-flex">
-            <div class="btn btn-light flex-grow-1 m-1" onclick="square()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="square()">
               <span>x<sup>2</sup></span>
             </div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="inverse()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="inverse()">
               1/x
             </div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="mod()">|x|</div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="exponential()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="mod()">|x|</div>
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="exponential()">
               exp
             </div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="modulo()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="modulo()">
               mod
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col d-flex">
-            <div class="btn btn-light flex-grow-1 m-1" onclick="squareRoot()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="squareRoot()">
               &#8730;x
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="("
               onclick="inputNumOp(this)"
             >
               (
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value=")"
               onclick="inputNumOp(this)"
             >
               )
             </div>
-            <div class="btn btn-light flex-grow-1 m-1" onclick="factorial()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="factorial()">
               n!
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="/"
               onclick="inputNumOp(this)"
             >
@@ -153,25 +153,25 @@
         </div>
         <div class="row">
           <div class="col d-flex">
-            <div class="btn btn-light flex-grow-1 m-1" onclick="xToPowerY()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="xToPowerY()">
               <span>x<sup>y</sup></span>
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="7"
               onclick="inputNumOp(this)"
             >
               7
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="8"
               onclick="inputNumOp(this)"
             >
               8
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               class="whiten"
               data-value="9"
               onclick="inputNumOp(this)"
@@ -179,7 +179,7 @@
               9
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="*"
               onclick="inputNumOp(this)"
             >
@@ -189,11 +189,11 @@
         </div>
         <div class="row">
           <div class="col d-flex">
-            <div class="btn btn-light flex-grow-1 m-1" onclick="tenToPowerX()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="tenToPowerX()">
               <span>10<sup>x</sup></span>
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               class="whiten"
               data-value="4"
               onclick="inputNumOp(this)"
@@ -201,7 +201,7 @@
               4
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               class="whiten"
               data-value="5"
               onclick="inputNumOp(this)"
@@ -209,7 +209,7 @@
               5
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               class="whiten"
               data-value="6"
               onclick="inputNumOp(this)"
@@ -217,7 +217,7 @@
               6
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="-"
               onclick="inputNumOp(this)"
             >
@@ -227,11 +227,11 @@
         </div>
         <div class="row">
           <div class="col d-flex">
-            <div class="btn btn-light flex-grow-1 m-1" onclick="logbase10()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="logbase10()">
               log
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               class="whiten"
               data-value="1"
               onclick="inputNumOp(this)"
@@ -239,7 +239,7 @@
               1
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               class="whiten"
               data-value="2"
               onclick="inputNumOp(this)"
@@ -247,14 +247,14 @@
               2
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="3"
               onclick="inputNumOp(this)"
             >
               3
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="+"
               onclick="inputNumOp(this)"
             >
@@ -264,18 +264,18 @@
         </div>
         <div class="row">
           <div class="col d-flex">
-            <div class="btn btn-light flex-grow-1 m-1" onclick="naturalLog()">
+            <div class="btn btn-light flex-grow-1 m-1 px-1" onclick="naturalLog()">
               ln
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               onclick="plusminus()"
               class="whiten"
             >
               &#177;
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               class="whiten"
               data-value="0"
               onclick="inputNumOp(this)"
@@ -283,18 +283,19 @@
               0
             </div>
             <div
-              class="btn btn-light flex-grow-1 m-1"
+              class="btn btn-light flex-grow-1 m-1 px-1"
               data-value="."
               onclick="inputNumOp(this)"
             >
               .
             </div>
-            <div class="btn btn-primary flex-grow-1 m-1" onclick="equal()">
+            <div class="btn btn-primary flex-grow-1 m-1 px-1" onclick="equal()">
               =
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./assets/src/app.js"></script>
   </body>
 </html>

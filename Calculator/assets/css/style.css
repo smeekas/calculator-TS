@@ -14,7 +14,8 @@
 }
 
 #buttons div {
-  min-width: 50px;
+  font-size: 14px;
+  min-width: 65px;
 }
 .mcursor{
   cursor: pointer;
