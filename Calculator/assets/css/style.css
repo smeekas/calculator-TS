@@ -1,12 +1,12 @@
 #calculator {
   max-width: 407px;
 
-  background-color: #f2f2f2;
+
 }
 #input {
   text-align: right;
   font-size: 30px;
-  height: 60px;
+  height: 65px;
   overflow-x: scroll;
 }
 #input div {
@@ -63,4 +63,10 @@
 }
 .dropdown:hover .dropdown-content p:hover {
   background-color: #f2f2f2;
+}
+@media screen and (max-width:400px){
+  #buttons div {
+    font-size: 10px;
+    min-width: 40px;
+  }
 }
